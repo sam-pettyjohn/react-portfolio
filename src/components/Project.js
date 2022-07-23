@@ -364,51 +364,42 @@ function Main() {
                 <h2>Projects</h2>
 
                 {/* <!-- ALL PROJECT OBJECTS --> */}
+                
+                <div class="container">
+                <div className="row justify-content-center">
                 {devObjects.map((card) => (
                     <>
-                        <div className="experience">
-
+                    
+                        <div className="experience col-5 ">
                             <a href={card.projectURL}>
                                 <img 
                                     src={card.thumbnail}
                                     alt={card.altTag}
                                 />
                             </a>
-
-                            <br/>
-
                             <div className="container-header">
                                 <h3>{card.title}</h3>
-                                <p>
-                                {card.description}
-                                </p>
-                                {/* <p className="">
-                                    <a target="_blank" rel="noreferrer" href={card.projectURL}>
-                                        Deployed Project
-                                    </a>
-                                    <br/>
-                                    <a target="_blank" rel="noreferrer" href={card.githubURL}>
-                                        Github Repository
-                                    </a>
-                                </p> */}
+                                <p>{card.description}</p>
                             </div>
-                            
                         </div>
+                    
                     </>
                 ))}
+                </div>   
+                </div> 
+            </div>
 
-                {/* <!-- Resume --> */}
-                <div className="resume">
-                        <h4>Want to see a resume?</h4>
-                        <a href={resume}>Take a Look</a>
-                </div>
+            {/* <!-- Resume --> */}
+            <div className="resume">
+                    <h4>Want to see a resume?</h4>
+                    <a href={resume}>Take a Look</a>
             </div>
             {/* <!-- END SECTION: PROJECTS --> */}
 
 
 
 
-
+            
         </main>
     )
 
