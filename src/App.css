@@ -32,7 +32,7 @@ body::-webkit-scrollbar {
 
 /* Navigation */
 .navbar { 
-    padding: 15px 300px;
+    padding: 10px 200px;
     display: flex;
     justify-content:space-between;
     flex-wrap: wrap;
@@ -56,9 +56,10 @@ body::-webkit-scrollbar {
     font-weight: lighter;
 }
 
-.navbar  nav {
-    margin: 7px 0;
-}
+/* .navbar nav {
+    margin: 0px 0;
+    
+} */
 
 .navbar nav ul {
     display: flex;
@@ -66,6 +67,7 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    padding-top: 10px;
 }
 
 .navbar nav ul li {
@@ -76,7 +78,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar nav ul li a {
-    padding: 10px 0 10px 15px;
+    padding: 0 10px 0 10px;
     font-size: 17px;
 }
 /* End Navigation */
@@ -117,7 +119,7 @@ body::-webkit-scrollbar {
 
 /* Section: About */
 .about {
-    padding: 20px 300px;
+    padding: 20px 200px;
     overflow: auto;
     align-self: auto;
     width: 100%;
@@ -139,16 +141,16 @@ body::-webkit-scrollbar {
 
 .bio-img {
     margin-top: 20px;
-    resize: both;
-    position: relative;
-    flex: 1;
+    /* resize: both; */
+    /* position: relative; */
+    /* flex: 1;
     max-width: 100%;
     max-height: 100%;
     padding: 0 20px 20px 10px;
     border-radius: 15px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .bio-p {
@@ -171,7 +173,7 @@ body::-webkit-scrollbar {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px 300px 200px 300px;
+    padding: 20px 200px 200px 200px;
     overflow: auto;
     align-self: auto;
     width: 100%;
@@ -262,7 +264,7 @@ body::-webkit-scrollbar {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-around;
-    padding: 20px 300px 0px 300px;
+    padding: 20px 200px 0px 200px;
     overflow: auto;
     align-self: auto;
     width: 100%;
@@ -352,7 +354,7 @@ body::-webkit-scrollbar {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0px 300px;
+    padding: 0px 200px;
     overflow: auto;
     align-self: auto;
 }
@@ -371,7 +373,7 @@ body::-webkit-scrollbar {
 
 /* Footer */
 footer {
-    padding: 15px 300px;
+    padding: 15px 200px;
     display: flex;
     justify-content: center;
     background-color: var(--secondary-color);
@@ -401,7 +403,7 @@ footer {
 }
 /* End Footer */
 
-/* @media screen and (max-width: 1370px) {
+@media screen and (max-width: 1370px) {
     header {
         padding: 15px 100px;
     }
@@ -488,4 +490,5 @@ footer {
     footer {
         padding: 10px 30px;
     }
-} */
+
+}
