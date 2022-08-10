@@ -128,8 +128,8 @@ body::-webkit-scrollbar {
 }
 
 .about-bg {
-    background-color: rgb(31, 30, 28, 0.65);
-    animation-delay: 0.6s;
+    background-color: rgb(31, 30, 28, 0.75);
+    transition: background-color 1s ease;
 }
 
 .about h2 {
