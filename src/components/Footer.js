@@ -1,12 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 
 export default function Footer() {
+
+    // add background color when scrolling to make reading text easier
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 90) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    };
+
+    window.addEventListener('scroll', changeColor);
+
   return (
     <div>
         
         {/* <!-- SECTION: CONTACT ME --> */}
-
+        <div className={color ? "about-bg" : "body"}>
         <section id="contact" className="contact">
             <h2>Contact Me</h2>
 
@@ -19,8 +32,9 @@ export default function Footer() {
             
         </section>
         
+        
         <br></br>
-    
+        </div>
         {/* <!-- FOOTER --> */}
         <footer>
 

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import headshot from "../assets/img/headshot.jpg";
 import resume from "../assets/resume/SMP Resume.pdf";
 
 // Project Image Imports
 
+import healthyhelperv2 from "../assets/img/landingpage.png";
+import bse from "../assets/img/bse.gif";
 // import reactportfolio from "../assets/img/";
 import budgettracker from "../assets/img/budgettracker.png";
 import socialnetworkAPI from "../assets/img/socialnetworkapi.gif"; 
@@ -11,50 +13,62 @@ import regextutorial from "../assets/img/RegexTutorial.png";
 import fastfingers from "../assets/img/fast-fingers.png";
 import randomphotogenerator from "../assets/img/randomphotogen.png";
 import ecommercebackend from "../assets/img/ecommerce.gif";
-// import employeetracker from "../assets/img/employeetracker.png";
-// import notetaker from "../assets/img/note-taker.png";
-// import teamprofilegenerator from "../assets/img/teamprofilegen.png";
-// import readmegenerator from "../assets/img/readmegen.jpeg";
-// import healthyhelper from "../assets/img/healthyhelper.gif";
-// import weatherdashboard from "../assets/img/weatherdashboard.png";
-// import dailyplanner from "../assets/img/dailyplanner.gif";
-// import codequiz from "../assets/img/code-quiz.gif";
-// import passwordgenerator from "../assets/img/passwordgen.png";
-// import portfolioV1 from "../assets/img/portfolioV1.png";
-// import horiseonrefactor from "../assets/img/horiseon.jpg";
+import employeetracker from "../assets/img/employeetracker.png";
+import notetaker from "../assets/img/note-taker.png";
+import teamprofilegenerator from "../assets/img/teamprofilegen.png";
+import readmegenerator from "../assets/img/readmegen.jpeg";
+import healthyhelper from "../assets/img/healthyhelper.gif";
+import weatherdashboard from "../assets/img/weatherdashboard.png";
+import dailyplanner from "../assets/img/dailyplanner.gif";
+import codequiz from "../assets/img/code-quiz.gif";
+import passwordgenerator from "../assets/img/passwordgen.png";
+import portfolioV1 from "../assets/img/portfolioV1.png";
+import horiseonrefactor from "../assets/img/horiseon.jpg";
 
 
 
 function Main() {
 
+    // add background color when scrolling to make reading text easier
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 90) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    };
+
+    window.addEventListener('scroll', changeColor);
+
     // create development project object to contain all project details
     let devObjects = [
 
-        // TBD GP3
-        // {
-        //     title: "GP3",
-        //     description: "TBD",
+        // Healthy Helper V2
+        {
+            title: "Healthy Helper V2",
+            description: "Help inspire users to find health-conscious meal recipes based on the ingredients found in their kitchen.",
 
-        //     thumbnail: "",
-        //     altTag: "TBD",
+            thumbnail: healthyhelperv2,
+            altTag: "landing page for healthy helper v2",
             
-        //     projectURL: "TBD",
-        //     githubURL: "TBD",
-        // },
+            projectURL: "https://healthy-helper-v2.herokuapp.com/",
+            githubURL: "https://github.com/sam-pettyjohn/healthy-helper-v2",
+        },
 
         // book search engine
-        // {
-        //     title: "Book Search Engine",
-        //     description: "WIP",
+        {
+            title: "Book Search Engine",
+            description: "Taking a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server.",
 
-        //     thumbnail: "WIP",
-        //     altTag: "WIP",
+            thumbnail: bse,
+            altTag: "demo of the Book Search Engine",
             
-        //     projectURL: "WIP",
-        //     githubURL: "https://github.com/sam-pettyjohn/book-search-engine",
-        // },
+            projectURL: "book-search-engine-smp.herokuapp.com",
+            githubURL: "https://github.com/sam-pettyjohn/book-search-engine",
+        },
 
-        // react portfolio
+        // // react portfolio
         // {
         //     title: "React.JS Portfolio",
         //     description: "",
@@ -139,142 +153,143 @@ function Main() {
             githubURL: "https://github.com/sam-pettyjohn/ecommerce-back-end",
         },
 
-        // // employee tracker
-        // {
-        //     title: "Employee Tracker",
-        //     description: "A command-line application to manage a company's employee database!",
+        // employee tracker
+        {
+            title: "Employee Tracker",
+            description: "A command-line application to manage a company's employee database!",
 
-        //     thumbnail: employeetracker,
-        //     altTag: "",
+            thumbnail: employeetracker,
+            altTag: "",
             
-        //     projectURL: "https://drive.google.com/file/d/1yasPgretrYf7zHobY-B8rR-YXFW8FUO9/view",
-        //     githubURL: "https://github.com/sam-pettyjohn/employee-tracker",
-        // },
+            projectURL: "https://drive.google.com/file/d/1yasPgretrYf7zHobY-B8rR-YXFW8FUO9/view",
+            githubURL: "https://github.com/sam-pettyjohn/employee-tracker",
+        },
 
-        // // note taker
-        // {
-        //     title: "Note Taker",
-        //     description: "Web application that can be used to write and save notes.",
+        // note taker
+        {
+            title: "Note Taker",
+            description: "Web application that can be used to write and save notes.",
 
-        //     thumbnail: notetaker,
-        //     altTag: "",
+            thumbnail: notetaker,
+            altTag: "",
             
-        //     projectURL: "https://intense-beach-59321.herokuapp.com/",
-        //     githubURL: "https://github.com/sam-pettyjohn/note-taker",
-        // },
+            projectURL: "https://intense-beach-59321.herokuapp.com/",
+            githubURL: "https://github.com/sam-pettyjohn/note-taker",
+        },
 
-        // // team profile generator
-        // {
-        //     title: "Team Profile Generator",
-        //     description: "A Node.js command-line application that takes information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.",
+        // team profile generator
+        {
+            title: "Team Profile Generator",
+            description: "A Node.js command-line application that takes information about employees on a software engineering team and generates an HTML webpage that displays summaries for each person.",
 
-        //     thumbnail: teamprofilegenerator,
-        //     altTag: "",
+            thumbnail: teamprofilegenerator,
+            altTag: "",
             
-        //     projectURL: "https://drive.google.com/file/d/1LAf2hnAb_RY4jH9JgINoUvmLSpP49qo_/view",
-        //     githubURL: "https://github.com/sam-pettyjohn/team-profile-generator",
-        // },
+            projectURL: "https://drive.google.com/file/d/1LAf2hnAb_RY4jH9JgINoUvmLSpP49qo_/view",
+            githubURL: "https://github.com/sam-pettyjohn/team-profile-generator",
+        },
 
-        // // read me generator
-        // {
-        //     title: "README.md Generator",
-        //     description: "A README generator to quickly create a professional README.md file for a new project.",
+        // read me generator
+        {
+            title: "README.md Generator",
+            description: "A README generator to quickly create a professional README.md file for a new project.",
 
-        //     thumbnail: readmegenerator,
-        //     altTag: "",
+            thumbnail: readmegenerator,
+            altTag: "",
             
-        //     projectURL: "https://drive.google.com/file/d/1sulwouYGrnuaWbgzK6DsHvfaDoEZCRkF/view",
-        //     githubURL: "https://github.com/sam-pettyjohn/read-me-generator",
-        // },
+            projectURL: "https://drive.google.com/file/d/1sulwouYGrnuaWbgzK6DsHvfaDoEZCRkF/view",
+            githubURL: "https://github.com/sam-pettyjohn/read-me-generator",
+        },
 
-        // // healthy helper (GP1)
-        // {
-        //     title: "Healthy Helper",
-        //     description: "Help inspire users to find health-conscious meal recipes based on the ingredients found in their kitchen. ",
+        // healthy helper (GP1)
+        {
+            title: "Healthy Helper",
+            description: "Help inspire users to find health-conscious meal recipes based on the ingredients found in their kitchen. ",
 
-        //     thumbnail: healthyhelper,
-        //     altTag: "",
+            thumbnail: healthyhelper,
+            altTag: "",
             
-        //     projectURL: "sam-pettyjohn.github.io/healthy-helper/",
-        //     githubURL: "https://github.com/sam-pettyjohn/healthy-helper",
-        // },
+            projectURL: "sam-pettyjohn.github.io/healthy-helper/",
+            githubURL: "https://github.com/sam-pettyjohn/healthy-helper",
+        },
 
-        // // weather dashboard
-        // {
-        //     title: "Weather Dashboard",
-        //     description: "Weather dashboard that will allow user to see the weather outlook for multiple cities.",
+        // weather dashboard
+        {
+            title: "Weather Dashboard",
+            description: "Weather dashboard that will allow user to see the weather outlook for multiple cities.",
 
-        //     thumbnail: weatherdashboard,
-        //     altTag: "",
+            thumbnail: weatherdashboard,
+            altTag: "",
             
-        //     projectURL: "https://sam-pettyjohn.github.io/weather-dashboard/",
-        //     githubURL: "https://github.com/sam-pettyjohn/weather-dashboard",
-        // },
+            projectURL: "https://sam-pettyjohn.github.io/weather-dashboard/",
+            githubURL: "https://github.com/sam-pettyjohn/weather-dashboard",
+        },
 
-        // // daily planner
-        // {
-        //     title: "Daily Planner",
-        //     description: "A simple calendar application that allows a user to save events for each hour of the day. ",
+        // daily planner
+        {
+            title: "Daily Planner",
+            description: "A simple calendar application that allows a user to save events for each hour of the day. ",
 
-        //     thumbnail: dailyplanner,
-        //     altTag: "",
+            thumbnail: dailyplanner,
+            altTag: "",
             
-        //     projectURL: "https://github.com/sam-pettyjohn/daily-planner",
-        //     githubURL: "https://sam-pettyjohn.github.io/daily-planner/",
-        // },
+            projectURL: "https://github.com/sam-pettyjohn/daily-planner",
+            githubURL: "https://sam-pettyjohn.github.io/daily-planner/",
+        },
 
-        // // code quiz
-        // {
-        //     title: "Code Quiz",
-        //     description: "A JavaScript coding assessment of multiple-choice questions.",
+        // code quiz
+        {
+            title: "Code Quiz",
+            description: "A JavaScript coding assessment of multiple-choice questions.",
 
-        //     thumbnail: codequiz,
-        //     altTag: "",
+            thumbnail: codequiz,
+            altTag: "",
             
-        //     projectURL: "sam-pettyjohn.github.io/code-quiz/",
-        //     githubURL: "https://github.com/sam-pettyjohn/code-quiz",
-        // },
+            projectURL: "sam-pettyjohn.github.io/code-quiz/",
+            githubURL: "https://github.com/sam-pettyjohn/code-quiz",
+        },
 
-        // // password generator
-        // {
-        //     title: "Random Password Generator",
-        //     description: "Application that the user can use to generate a random password based on criteria they’ve selected. ",
+        // password generator
+        {
+            title: "Random Password Generator",
+            description: "Application that the user can use to generate a random password based on criteria they’ve selected. ",
 
-        //     thumbnail: passwordgenerator,
-        //     altTag: "",
+            thumbnail: passwordgenerator,
+            altTag: "",
             
-        //     projectURL: "https://sam-pettyjohn.github.io/password-generator/",
-        //     githubURL: "https://github.com/sam-pettyjohn/password-generator",
-        // },
+            projectURL: "https://sam-pettyjohn.github.io/password-generator/",
+            githubURL: "https://github.com/sam-pettyjohn/password-generator",
+        },
 
-        // // portfolio OG
-        // {
-        //     title: "Portfolio v1",
-        //     description: "Personally crafted website to display my front-end skills [retired]",
+        // portfolio OG
+        {
+            title: "Portfolio v1",
+            description: "Personally crafted website to display my front-end skills [retired]",
 
-        //     thumbnail: portfolioV1,
-        //     altTag: "",
+            thumbnail: portfolioV1,
+            altTag: "",
             
-        //     projectURL: "https://sam-pettyjohn.github.io/portfolio/",
-        //     githubURL: "https://github.com/sam-pettyjohn/portfolio",
-        // },
+            projectURL: "https://sam-pettyjohn.github.io/portfolio/",
+            githubURL: "https://github.com/sam-pettyjohn/portfolio",
+        },
 
-        // // horiseon seo refactor
-        // {
-        //     title: "Horiseon Code Refactor",
-        //     description: "Codebase refactor that follows accessibility standards for the site to be optimized for search engines.",
+        // horiseon seo refactor
+        {
+            title: "Horiseon Code Refactor",
+            description: "Codebase refactor that follows accessibility standards for the site to be optimized for search engines.",
 
-        //     thumbnail: horiseonrefactor,
-        //     altTag: "",
+            thumbnail: horiseonrefactor,
+            altTag: "",
             
-        //     projectURL: "https://github.com/sam-pettyjohn/horiseon-seo",
-        //     githubURL: "https://github.com/sam-pettyjohn/horiseon-seo",
-        // }
+            projectURL: "https://github.com/sam-pettyjohn/horiseon-seo",
+            githubURL: "https://github.com/sam-pettyjohn/horiseon-seo",
+        }
 
     ];
 
     return (
         <main>
+            <div className={color ? "about-bg" : "body"}>
             {/* <!-- SECTION: ABOUT ME --> */}
             <div id="about" className="about">
 
@@ -283,12 +298,14 @@ function Main() {
                 <div className="about-me">
 
                     <div className="bio-img">
-                    <img src={headshot} alt="Sam Pettyjohn, happy to see you here"/>
+
+                            <img src={headshot} alt="Sam Pettyjohn, happy to see you here"/>
+                        
                     </div>
 
                     <div className="bio-p">
                         <p> 
-                            As an aspiring Full-Stack Web Developer with a background in 
+                            As a Full-Stack Web Developer with a background in 
                             Supply-Chain Operations, I enjoy analyzing problems, scaling 
                             solutions, and delivering results to the people who need them.
                             <br></br>
@@ -301,10 +318,10 @@ function Main() {
                             of, business operations will make me an asset to your team.
                             <br></br>
                             <br></br>
-                            I am currently enrolled at Southern Methodist University in
-                            Dallas, TX, where I am fully dedicating my time to build a 
+                            I am a graduate of Southern Methodist University in
+                            Dallas, TX, where I devoted my efforts to build a 
                             solid foundation in full-stack development by attending their 
-                            coding bootcamp. Outside of class you can find me traveling 
+                            coding bootcamp. Outside of work you can find me traveling 
                             the country with my wife (a nurse), cooking, gaming, and 
                             walking my dog, Obi.
                         </p>
@@ -324,8 +341,8 @@ function Main() {
                     <div class="curriculum">
                         <div class="uttyler">
                         <div class="container-header">
-                        <h3>Business Occupations</h3>
-                        <h4>Bachelor of Applied Art and Science, UT Tyler</h4>
+                        <h3>Business Administration & Management</h3>
+                        <h4>Bachelor of Applied Art and Science, University of Texas at Tyler</h4>
                         </div>
                             <p>
                                 Unique program that allowed for application of college-level 
@@ -342,14 +359,11 @@ function Main() {
                     <div class="curriculum">
                         <div class="bootcamp">
                         <div class="container-header">
-                        <h3>Coding Bootcamp</h3>
-                        <h4>Certificate Program, SMU</h4>
+                        <h3>Full Stack Developer, Computer Software Engineering</h3>
+                        <h4>Continuing & Professional Education Certification, Southern Methodist University</h4>
                         </div>
                             <p>
-                            Rigorous curriculum that covers a Full Stack: HTML5, CSS3, 
-                            JavaScript, jQuery, Express.js, React.js, Node.js, progressive 
-                            web apps, agile methodology, computer science, database theory, 
-                            MongoDB, MySQL, Git, Python, C#, and AWS.
+                            Full Stack Development Bootcamp focusing on: HTML5, CSS3, JavaScript, jQuery, Express.js, React.js, Node.js, progressive web apps, agile methodology, computer science, database theory, MongoDB, MySQL, Git, and more.
                             </p>
                         </div>
                     </div>
@@ -367,27 +381,27 @@ function Main() {
 
                 {/* <!-- ALL PROJECT OBJECTS --> */}
                 
-                <div class="container">
-                <div className="row justify-content-around">
-                {devObjects.map((card) => (
-                    <>
-                    
-                        <div className="experience col-5">
-                            <a href={card.projectURL}>
-                                <img 
-                                    src={card.thumbnail}
-                                    alt={card.altTag}
-                                />
-                            </a>
-                            <div className="container-header">
-                                <h3>{card.title}</h3>
-                                <p>{card.description}</p>
+                <div class="container-fluid">
+                    <div className="row justify-content-around">
+                    {devObjects.map((card) => (
+                        <>
+                        
+                            <div className="experience col-3">
+                                <a href={card.projectURL}>
+                                    <img 
+                                        src={card.thumbnail}
+                                        alt={card.altTag}
+                                    />
+                                </a>
+                                <div className="container-header">
+                                    <h3>{card.title}</h3>
+                                    <p>{card.description}</p>
+                                </div>
                             </div>
-                        </div>
-                    
-                    </>
-                ))}
-                </div>   
+                        
+                        </>
+                    ))}
+                    </div>   
                 </div> 
             </div>
 
@@ -397,7 +411,7 @@ function Main() {
                     <a href={resume}>Take a Look</a>
             </div>
             {/* <!-- END SECTION: PROJECTS --> */}
-            
+            </div>
         </main>
     )
 
