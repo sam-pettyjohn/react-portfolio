@@ -21,14 +21,14 @@ export default function Footer() {
         {/* <!-- SECTION: CONTACT ME --> */}
         <div className={color ? "about-bg" : "body"}>
         <section id="contact" className="contact">
-            <h2>Contact Me</h2>
+            {/* <h2>Contact Me</h2> */}
 
             {/* <!-- WIP: CONTACT FORM --> */}
 
-            <p>
+            {/* <p>
                 Thanks for stopping by. Want to connect? Reach me on the platforms below.
                 <i className='fa fa-arrow-down'></i>
-            </p >
+            </p > */}
             
         </section>
         

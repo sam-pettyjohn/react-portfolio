@@ -14,7 +14,7 @@ export default function Hero() {
         {/* <!-- TITLE --> */}
         <h2>Sam Pettyjohn</h2>
 
-        <h4>Full-Stack Web Developer</h4>
+        <h4>Full-Stack Developer</h4>
 
         {/* <!-- ARROW BUTTON --> */}
         <a  href="#about" className="button" >

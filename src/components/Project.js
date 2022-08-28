@@ -9,7 +9,7 @@ import bse from "../assets/img/bse.gif";
 // import reactportfolio from "../assets/img/";
 import budgettracker from "../assets/img/budgettracker.png";
 import socialnetworkAPI from "../assets/img/socialnetworkapi.gif"; 
-import regextutorial from "../assets/img/RegexTutorial.png";
+// import regextutorial from "../assets/img/RegexTutorial.png";
 import fastfingers from "../assets/img/fast-fingers.png";
 import randomphotogenerator from "../assets/img/randomphotogen.png";
 import ecommercebackend from "../assets/img/ecommerce.gif";
@@ -17,13 +17,13 @@ import employeetracker from "../assets/img/employeetracker.png";
 import notetaker from "../assets/img/note-taker.png";
 import teamprofilegenerator from "../assets/img/teamprofilegen.png";
 import readmegenerator from "../assets/img/readmegen.jpeg";
-import healthyhelper from "../assets/img/healthyhelper.gif";
+// import healthyhelper from "../assets/img/healthyhelper.gif";
 import weatherdashboard from "../assets/img/weatherdashboard.png";
 import dailyplanner from "../assets/img/dailyplanner.gif";
 import codequiz from "../assets/img/code-quiz.gif";
 import passwordgenerator from "../assets/img/passwordgen.png";
-import portfolioV1 from "../assets/img/portfolioV1.png";
-import horiseonrefactor from "../assets/img/horiseon.jpg";
+// import portfolioV1 from "../assets/img/portfolioV1.png";
+// import horiseonrefactor from "../assets/img/horiseon.jpg";
 
 
 
@@ -104,17 +104,17 @@ function Main() {
             githubURL: "https://github.com/sam-pettyjohn/social-network-api",
         },
 
-        // regex tutorial
-        {
-            title: "Regex Tutorial",
-            description: "A guide to understanding regular expression matching in URLs.",
+        // // regex tutorial
+        // {
+        //     title: "Regex Tutorial",
+        //     description: "A guide to understanding regular expression matching in URLs.",
 
-            thumbnail: regextutorial,
-            altTag: "",
+        //     thumbnail: regextutorial,
+        //     altTag: "",
             
-            projectURL: "https://github.com/sam-pettyjohn/regex-tutorial/blob/main/gist-template.md",
-            githubURL: "https://github.com/sam-pettyjohn/regex-tutorial",
-        },
+        //     projectURL: "https://github.com/sam-pettyjohn/regex-tutorial/blob/main/gist-template.md",
+        //     githubURL: "https://github.com/sam-pettyjohn/regex-tutorial",
+        // },
 
         // fast fingers (GP2)
         { 
@@ -201,17 +201,17 @@ function Main() {
             githubURL: "https://github.com/sam-pettyjohn/read-me-generator",
         },
 
-        // healthy helper (GP1)
-        {
-            title: "Healthy Helper",
-            description: "Help inspire users to find health-conscious meal recipes based on the ingredients found in their kitchen. ",
+        // // healthy helper (GP1)
+        // {
+        //     title: "Healthy Helper",
+        //     description: "Help inspire users to find health-conscious meal recipes based on the ingredients found in their kitchen. ",
 
-            thumbnail: healthyhelper,
-            altTag: "",
+        //     thumbnail: healthyhelper,
+        //     altTag: "",
             
-            projectURL: "sam-pettyjohn.github.io/healthy-helper/",
-            githubURL: "https://github.com/sam-pettyjohn/healthy-helper",
-        },
+        //     projectURL: "sam-pettyjohn.github.io/healthy-helper/",
+        //     githubURL: "https://github.com/sam-pettyjohn/healthy-helper",
+        // },
 
         // weather dashboard
         {
@@ -261,29 +261,29 @@ function Main() {
             githubURL: "https://github.com/sam-pettyjohn/password-generator",
         },
 
-        // portfolio OG
-        {
-            title: "Portfolio v1",
-            description: "Personally crafted website to display my front-end skills [retired]",
+        // // portfolio OG
+        // {
+        //     title: "Portfolio v1",
+        //     description: "Personally crafted website to display my front-end skills [retired]",
 
-            thumbnail: portfolioV1,
-            altTag: "",
+        //     thumbnail: portfolioV1,
+        //     altTag: "",
             
-            projectURL: "https://sam-pettyjohn.github.io/portfolio/",
-            githubURL: "https://github.com/sam-pettyjohn/portfolio",
-        },
+        //     projectURL: "https://sam-pettyjohn.github.io/portfolio/",
+        //     githubURL: "https://github.com/sam-pettyjohn/portfolio",
+        // },
 
-        // horiseon seo refactor
-        {
-            title: "Horiseon Code Refactor",
-            description: "Codebase refactor that follows accessibility standards for the site to be optimized for search engines.",
+        // // horiseon seo refactor
+        // {
+        //     title: "Horiseon Code Refactor",
+        //     description: "Codebase refactor that follows accessibility standards for the site to be optimized for search engines.",
 
-            thumbnail: horiseonrefactor,
-            altTag: "",
+        //     thumbnail: horiseonrefactor,
+        //     altTag: "",
             
-            projectURL: "https://github.com/sam-pettyjohn/horiseon-seo",
-            githubURL: "https://github.com/sam-pettyjohn/horiseon-seo",
-        }
+        //     projectURL: "https://github.com/sam-pettyjohn/horiseon-seo",
+        //     githubURL: "https://github.com/sam-pettyjohn/horiseon-seo",
+        // }
 
     ];
 
@@ -305,24 +305,24 @@ function Main() {
 
                     <div className="bio-p">
                         <p> 
-                            As a Full-Stack Web Developer with a background in 
+                            As a Full Stack Developer with a background in 
                             Supply-Chain Operations, I enjoy analyzing problems, scaling 
                             solutions, and delivering results to the people who need them.
                             <br></br>
                             <br></br>
                             As someone who has always enjoyed technology, I am eager to 
-                            learn and apply my skills where possible. Working in supply 
-                            chain during the pandemic proved incredibly challenging, 
-                            however I enjoyed solving the complex issues presented daily. 
-                            I believe that both my experience in, and thorough understanding 
-                            of, business operations will make me an asset to your team.
+                            learn and apply my skills where possible. Working in the healthcare supply 
+                            chain during the pandemic proved incredibly challenging; 
+                            however, solving the complex issues presented daily was rewarding and impactful. 
+                            I believe that my experience in, and thorough understanding 
+                            of, business operations allows for a holistic perspective on projects and organizational interests.
                             <br></br>
                             <br></br>
                             I am a graduate of Southern Methodist University in
-                            Dallas, TX, where I devoted my efforts to build a 
-                            solid foundation in full-stack development by attending their 
-                            coding bootcamp. Outside of work you can find me traveling 
-                            the country with my wife (a nurse), cooking, gaming, and 
+                            Dallas, TX, where I developed a solid foundation in JavaScript, database theory, and MERN. 
+                            Currently I am honing my skill in C++ and Java.
+                            Outside of work you can find me traveling 
+                            the country, cooking, coding, and 
                             walking my dog, Obi.
                         </p>
                     </div>
@@ -342,7 +342,7 @@ function Main() {
                         <div class="uttyler">
                         <div class="container-header">
                         <h3>Business Administration & Management</h3>
-                        <h4>Bachelor of Applied Art and Science, University of Texas at Tyler</h4>
+                        <h5>Bachelor of Applied Art and Science, University of Texas at Tyler</h5>
                         </div>
                             <p>
                                 Unique program that allowed for application of college-level 
@@ -360,7 +360,7 @@ function Main() {
                         <div class="bootcamp">
                         <div class="container-header">
                         <h3>Full Stack Developer, Computer Software Engineering</h3>
-                        <h4>Continuing & Professional Education Certification, Southern Methodist University</h4>
+                        <h5>Professional Education Certification, Southern Methodist University</h5>
                         </div>
                             <p>
                             Full Stack Development Bootcamp focusing on: HTML5, CSS3, JavaScript, jQuery, Express.js, React.js, Node.js, progressive web apps, agile methodology, computer science, database theory, MongoDB, MySQL, Git, and more.
@@ -379,6 +379,12 @@ function Main() {
 
                 <h2>Projects</h2>
 
+                <h6><i>
+                    Hi friend - If you haven't heard, after a decade Heroku is removing their free hosting tier, which will affect many developers (including myself). 
+                    While this change isn't scheduled to take effect until Nov. 28, 2022, I am evaluating other cost-effective hosting platforms and hoping to be ahead of the curve. 
+                    Thank you for understanding!
+                    </i></h6>
+                    
                 {/* <!-- ALL PROJECT OBJECTS --> */}
                 
                 <div class="container-fluid">
@@ -407,8 +413,7 @@ function Main() {
 
             {/* <!-- RESUME --> */}
             <div id= "resume" className="resume">
-                    <h4>Want to see a resume?</h4>
-                    <a href={resume}>Take a Look</a>
+                    <a href={resume}>View my resume here!</a>
             </div>
             {/* <!-- END SECTION: PROJECTS --> */}
             </div>
